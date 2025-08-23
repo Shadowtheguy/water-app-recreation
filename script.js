@@ -17,5 +17,42 @@ var bottleLine2Es = "Elige la botella de agua correcta. Luego, haz clic en el gr
 var showerDescriptionEn = "Another way to conserve water is to take shorter showers. Try Setting a timer to five minutes!";
 var showerDescriptionEs = "Otra forma de ahorrar agua es ducharse más corto. ¡Prueba a programar un temporizador de cinco minutos!";
 
+var timerInstructionsEn = "Click on the timer.";
+var timerInstructionsEs = "Haga clic en el temporizador.";
+
 var homeButtonEn = "Home";
 var homeButtonEs = "Hogar";
+
+//Actual Functions
+
+//English Translation
+onEvent("buttonEn", "click", function() {
+    //Main Page
+    setText("mainPageTitle", mainTitleEn);
+    setText("mainPageDesc", mainDescriptionEn);
+    setText("nextButton1", nextButtonEn);
+    //Bottle Page
+    setText("bottlePageLine1", bottleLine1En);
+    setText("bottlePageLine2", bottleLine2En);
+    setText("nextButton2", nextButtonEn);
+    //Shower Page
+    setText("timerPageDesc", showerDescriptionEn);
+    setText("timerInstructions", timerInstructionsEn);
+    setText("homeButton", homeButtonEn);
+})
+
+//Spanish Translation
+onEvent("buttonEn", "click", function() {
+    //Main Page
+    setText("mainPageTitle", mainTitleEs);
+    setText("mainPageDesc", mainDescriptionEs);
+    setText("nextButton1", nextButtonEs);
+    //Bottle Page
+    setText("bottlePageLine1", bottleLine1Es);
+    setText("bottlePageLine2", bottleLine2Es);
+    setText("nextButton2", nextButtonEs);
+    //Shower Page
+    setText("timerPageDesc", showerDescriptionEs);
+    setText("timerInstructions", timerInstructionsEs);
+    setText("homeButton", homeButtonEs);
+})
