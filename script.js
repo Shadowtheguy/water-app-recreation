@@ -24,6 +24,7 @@ var homeButtonEn = "Home";
 var homeButtonEs = "Hogar";
 
 //Actual Functions
+//! The actual code needs to be updated to commands that work, for now it's just gonna be formatted so that I can fix it and it'll work without much trouble
 
 //English Translation
 onEvent("buttonEn", "click", function() {
@@ -42,7 +43,7 @@ onEvent("buttonEn", "click", function() {
 })
 
 //Spanish Translation
-onEvent("buttonEn", "click", function() {
+onEvent("buttonEs", "click", function() {
     //Main Page
     setText("mainPageTitle", mainTitleEs);
     setText("mainPageDesc", mainDescriptionEs);
