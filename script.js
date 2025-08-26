@@ -1,3 +1,5 @@
+//My testing area
+
 //Variables for English and Spanish switches
 console.log("hello");
 
@@ -24,6 +26,9 @@ var timerInstructionsEs = "Haga clic en el temporizador.";
 
 var homeButtonEn = "Home";
 var homeButtonEs = "Hogar";
+
+// Variables for conditionals
+var bottleMoved = false;
 
 //Actual Functions
 //! Code works now, just not across pages
@@ -61,3 +66,36 @@ onEvent("buttonEs", "click", function() {
 })
 
 //Image Interactions
+
+//Bottle Image Interactions
+onEvent("correctBottle", "click", function() {
+    imageElement = document.getElementById('correctBottle');
+    imageElement.src = 'images/white.png';
+
+    imageElement = document.getElementById('correctBottleMoved');
+    imageElement.src = 'images/waterBottleGlass.png';
+
+    bottleMoved = true;
+})
+
+if(bottleMoved = true) { 
+    onEvent("correctBottleMoved", "click", function() {
+    imageElement = document.getElementById('correctBottleMoved');
+    imageElement.src = 'images/waterBottleFilled.png';
+    })
+}
+
+onEvent("incorrectBottle", "click", function() {
+    imageElement = document.getElementById('incorrectBottle');
+    imageElement.src = 'images/waterBottleNo.png';
+})
+
+//Shower Image Interactions
+
+onEvent("timer", "click", function(){
+    imageElement = document.getElementById('timer');
+    imageElement.src = 'images/timerEnd.png';
+
+    imageElement = document.getElementById('showerCurtain');
+    imageElement.src = 'images/duck.png';
+})
