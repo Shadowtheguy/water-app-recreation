@@ -1,4 +1,6 @@
 //Variables for English and Spanish switches
+console.log("hello");
+
 var mainTitleEn = "Water Conservation Tips";
 var mainTitleEs = "Consejos Para la Conservación del Agua";
 
@@ -24,7 +26,7 @@ var homeButtonEn = "Home";
 var homeButtonEs = "Hogar";
 
 //Actual Functions
-//! The actual code needs to be updated to commands that work, for now it's just gonna be formatted so that I can fix it and it'll work without much trouble
+//! Code works now, just not across pages
 
 //English Translation
 onEvent("buttonEn", "click", function() {
