@@ -59,3 +59,5 @@ onEvent("buttonEs", "click", function() {
     setText("timerInstructions", timerInstructionsEs);
     setText("homeButton", homeButtonEs);
 })
+
+//Image Interactions
