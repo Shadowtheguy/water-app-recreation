@@ -49,7 +49,6 @@ onEvent("buttonEn", "click", function() {
 
 //Spanish Translation
 onEvent("buttonEs", "click", function() {
-    localStorage.setItem(Spanish, true);
     //Main Page
     setText("mainPageTitle", mainTitleEs);
     setText("mainPageDesc", mainDescriptionEs);
