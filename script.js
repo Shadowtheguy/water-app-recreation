@@ -39,9 +39,8 @@ var homeButtonEs = "Hogar";
 var bottleMoved = false;
 
 //Actual Functions
-//! Code works now, just not across pages
 
-setLanguage()
+setLanguage();
 
 //English Translation
 onEvent("buttonEn", "click", function () {
@@ -72,7 +71,6 @@ function setLanguage() {
     setText("timerInstructions", timerInstructionsEn);
     setText("homeButton", homeButtonEn);
   } else {
-    console.log(language, "this is the language");
     //Main Page
     setText("mainPageTitle", mainTitleEs);
     setText("mainPageDesc", mainDescriptionEs);
@@ -110,9 +108,7 @@ if ((bottleMoved = true)) {
 
 onEvent("incorrectBottle", "click", function () {
   imageElement = document.getElementById("incorrectBottle");
-  if(imageElement) {
-      imageElement.src = "images/waterBottleNo.png";
-  }
+  imageElement.src = "images/waterBottleNo.png";
 });
 
 //Shower Image Interactions
